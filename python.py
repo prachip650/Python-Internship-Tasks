@@ -1,70 +1,44 @@
 # # Task 1
-# print("Hello, World")
+print("Hello, World")
+
 # Task 2
-# name = "Prachi"
-# age = 20
-# height = 5.3
-# is_student = True
+name = "Prachi"
+age = 20
+height = 5.3
+is_student = True
 
-# print("Name",name)
-# print("Type",type(name))
+print("Name",name)
+print("Type",type(name))
 
-# print("Age",age)
-# print("Type",type(age))
+print("Age",age)
+print("Type",type(age))
 
-# print("Height",height)
-# print("Type",type(height))
+print("Height",height)
+print("Type",type(height))
 
-# print("Student",is_student)
-# print("Type",type(isinstance))
+print("Student",is_student)
+print("Type",type(isinstance))
 
+# Task 3
+name = input("Enter the name:")
+age = int(input("Enter the age:"))
+city = input("Enter the city:")
 
+print("Hello! My name is", name+ ".")
+print("I am",age, "years old.")
+print("I live in",city+ ".")
 
+# Task 4
+a = float(input("Enter first number:"))
+b = float(input("Enter second number:"))
 
+print("addition =",a+b)
+print("Subtraction =",a-b)
+print("Multiplication =",a*b)
+print("Division =",a/b)
+print("Modulus =",a%b)
+print("Exponent =",a**b)
 
-
-
- # Task 3
-# name = input("Enter the name:")
-# age = int(input("Enter the age:"))
-# city = input("Enter the city:")
-
-# print("Hello! My name is", name+ ".")
-# print("I am",age, "years old.")
-# print("I live in",city+ ".")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # Task 4
-# a = float(input("Enter first number:"))
-# b = float(input("Enter second number:"))
-
-# print("addition =",a+b)
-# print("Subtraction =",a-b)
-# print("Multiplication =",a*b)
-# print("Division =",a/b)
-# print("Modulus =",a%b)
-# print("Exponent =",a**b)
-
-
-
-
-
-
-
- 
 # Task 5
 # Student Information 
 name = input("Enter your name: ")
@@ -108,4 +82,3 @@ breadth = float(input("Enter breadth: "))
 area = length * breadth
 
 print("Area of rectangle:", area)
-
