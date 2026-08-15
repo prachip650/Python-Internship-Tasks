@@ -1,84 +1,83 @@
-# # Task 1
-print("Hello, World")
+# Task 1
+marks = int(input("Enter the marks:"))
+if marks>100:
+    print("A+")
+elif marks>=89:
+    print("A")
+elif marks>=79:
+    print("B")
+elif marks>=69:
+    print("C")
+elif marks>=59:
+    print("D")
+else:
+    print("Fali")
+
 
 # Task 2
-name = "Prachi"
-age = 20
-height = 5.3
-is_student = True
+n = int(input("Enter the number:"))
+print("Number for 1 to n:")
+for i in range(1,n+1):
+    print(i,end="")
 
-print("Name",name)
-print("Type",type(name))
+print("Number from N to 1:")
+for i in range(n, 0, -1):
+    print(i, end=" ")
 
-print("Age",age)
-print("Type",type(age))
+print("Multiplication Tablr:")
+for i in range(1,11):
+    print(n,"x",i,"=",n*i)
 
-print("Height",height)
-print("Type",type(height))
-
-print("Student",is_student)
-print("Type",type(isinstance))
 
 # Task 3
-name = input("Enter the name:")
-age = int(input("Enter the age:"))
-city = input("Enter the city:")
+a = float(input("Enter the first number"))
+b = float(input("Enter the second number"))
+def addition(a,b):
+    return a+b
 
-print("Hello! My name is", name+ ".")
-print("I am",age, "years old.")
-print("I live in",city+ ".")
+def subtraction(a,b):
+    return a-b
 
-# Task 4
-a = float(input("Enter first number:"))
-b = float(input("Enter second number:"))
+def multiplication(a,b):
+    return a*b
 
-print("addition =",a+b)
-print("Subtraction =",a-b)
-print("Multiplication =",a*b)
-print("Division =",a/b)
-print("Modulus =",a%b)
-print("Exponent =",a**b)
+def division(a,b):
+   if b == 0:
+    return a/b 
 
-# Task 5
-# Student Information 
-name = input("Enter your name: ")
-age = int(input("Enter your age: "))
-course = input("Enter your course: ")
-marks = float(input("Enter your marks: "))
+def modulus(a,b):
+   if b == 0:
+    return a%b
 
-print("Name:", name)
-print("Age:", age)
-print("Course:", course)
-print("Marks:", marks)
+print("Addition",addition (a,b))
+print("Subtraction",subtraction (a,b))
+print("Multiplication",multiplication (a,b))
+print("Division",division (a,b))
+print("Modulus",modulus (a,b))
 
-# Simple Calculator
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
 
-print("Addition:", num1+num2)
-print("Subtraction:", num1 - num2)
-print("Multiplication:", num1 * num2)
-print("Division:", num1 / num2)
+#  Task 4
+global_variable = "I am a Global Variable"
+def show_variable():
+    local_variable = "I am Local Variable"
+    print("Local variable:", local_variable)
+    print("Global variable:", global_variable)
 
-# Age Calculator/
-current_year = int(input("Enter current year: "))
-birth_year = int(input("Enter your birth year: "))
+show_scope()
+print("Global variable:", global_variable)
 
-age = current_year - birth_year
 
-print("Your age is:", age)
+#  Task 5
+import math
+import random
+import datetime
 
-# Temperature Converter
-celsius = float(input("Enter temperature in Celsius: "))
+number = 25
+square_root = math.sqrt(number)
+print("square root of",number,"is:",square_root)
 
-fahrenheit = (celsius * 9 / 5) + 32
+random_number = random.randint(1,100)
+print("random number:",random_number)
 
-print("Temperature in Fahrenheit:", fahrenheit)
-
-# Area Calculator
-length = float(input("Enter length: "))
-breadth = float(input("Enter breadth: "))
-
-area = length * breadth
-
-print("Area of rectangle:", area)
+current_datetime = datetime.datetime.now()
+print("current date time:", current_datetime)
